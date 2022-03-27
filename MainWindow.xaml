@@ -1,0 +1,22 @@
+﻿<Window x:Class="Plex_Video_Converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Plex_Video_Converter"
+        mc:Ignorable="d"
+        Title="Plex Video Converter" Height="143" Width="791" ResizeMode="CanMinimize">
+    <Grid>
+        <Label Content="Source" HorizontalAlignment="Left" Margin="10,10,0,0" Height="26" VerticalAlignment="Top"/>
+        <Label Content="Destination" HorizontalAlignment="Left" Margin="10,41,0,0" Height="26" VerticalAlignment="Top"/>
+        <Button x:Name="btnBrowseSource" Content="Browse" Margin="0,14,10,0" HorizontalAlignment="Right" Width="59" Click="btnBrowseSource_Click" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSource" Margin="0,15,74,0" TextWrapping="Wrap" Text="E:\Plex\To be converted" HorizontalAlignment="Right" Width="619" Height="18" VerticalAlignment="Top"/>
+        <Button x:Name="btnBrowseDestination" Content="Browse" Margin="0,44,10,0" HorizontalAlignment="Right" Width="59" Click="btnBrowseDestination_Click" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDestination" Margin="0,45,74,0" TextWrapping="Wrap" Text="E:\Plex\Converted" HorizontalAlignment="Right" Width="619" Height="18" VerticalAlignment="Top"/>
+        <Button x:Name="btnStart" Content="Start!" Margin="0,74,10,0" HorizontalAlignment="Right" Width="100" Click="btnStart_Click" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="btnCheckSource" Content="Check source" HorizontalAlignment="Right" Margin="0,74,115,0" Width="100" Click="btnCheckSource_Click" Height="20" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkIncludeMP4" Content="Include .mp4 files" HorizontalAlignment="Right" Margin="0,76,226,0" Height="15" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="pbMain" HorizontalAlignment="Left" Height="18" Margin="16,74,0,0" VerticalAlignment="Top" Width="409" Maximum="1000"/>
+
+    </Grid>
+</Window>
